@@ -31,7 +31,6 @@ plt.hist(G)
 plt.title("Distribution of the Gini coefficient")
 plt.xlabel("G")
 plt.ylabel("frequency in simulated data")
-plt.savefig("gini_hist.png", dpi=1500)
 plt.show
 
 # Evaluate the pdf and cdf for a dense grid of values.
@@ -69,5 +68,4 @@ plt.vlines(eq_tail_CI[0], 0, G_pdf(eq_tail_CI[0]))
 plt.vlines(eq_tail_CI[1], 0, G_pdf(eq_tail_CI[1]))
 plt.vlines(HPDI[0], 0, G_pdf(HPDI[0]), color = "red")
 plt.vlines(HPDI[1], 0, G_pdf(HPDI[1]), color = "red")
-plt.savefig("gini_density.png", dpi = 1500)
 plt.show
