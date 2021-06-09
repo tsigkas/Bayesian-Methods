@@ -81,7 +81,6 @@ post_prob = posterior_prob(x_1w, post_mode, J_inv, 20000)
 plt.hist(post_prob)
 plt.xlabel("Probability that the woman works")
 plt.ylabel("Frequency")
-plt.savefig("work_prob_hist.png", dpi = 1500)
 plt.show
 
 # The posterior distribution of the nunmber of women working
@@ -90,6 +89,5 @@ post_num = posterior_num(x_1w, post_mode, J_inv, 1000)
 plt.hist(post_num, range=(0,9))
 plt.xlabel("Number of women that work")
 plt.ylabel("Frequency")
-plt.savefig("work_num_hist.png", dpi = 1500)
 plt.show
 
