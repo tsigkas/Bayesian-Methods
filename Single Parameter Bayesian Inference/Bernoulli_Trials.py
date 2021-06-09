@@ -31,7 +31,6 @@ plt.plot(mean_sim)
 plt.plot(std_sim)
 plt.legend(["sample mean","sample standard deviation"])
 plt.xlabel("number of samples")
-plt.savefig("mean_sd_convergence.png", dpi=1500)
 plt.show
 
 #Compare simulated probability to exact posterior
@@ -46,5 +45,4 @@ plt.hist(logodds_sim)
 plt.title("Distribution of the log-odds")
 plt.xlabel("log-odds")
 plt.ylabel("frequency in simulated data")
-plt.savefig("logodds_hist", dpi = 1500)
 plt.show
