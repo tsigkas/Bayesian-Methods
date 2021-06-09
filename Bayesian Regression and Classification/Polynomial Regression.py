@@ -116,7 +116,6 @@ plt.ylabel("Temperature (deg C)")
 
 plt.scatter(data.time.values,Y)
 plt.show
-plt.savefig("temp_data_posterior_curves.png", dpi = 1000)
 
 # Find the simulated distribution of the time with maximal temperature
 # from the posterior distribution of beta
